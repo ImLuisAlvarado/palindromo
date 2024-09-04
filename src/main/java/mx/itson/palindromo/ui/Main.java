@@ -95,6 +95,7 @@ public class Main extends javax.swing.JFrame {
             else{
                 result.setText("La palabra "+txtFieldPalindromo.getText()+" no es un palindromo");
             }
+            txtFieldPalindromo.setText("");
             
         } catch (Exception ex){
             System.err.println("Ocurrió un error "+ex.getMessage());
