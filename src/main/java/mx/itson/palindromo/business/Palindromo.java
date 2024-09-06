@@ -12,7 +12,7 @@ public class Palindromo {
     public static boolean esPalindromo (String word){
         
         String reversedWord = "";
-        String cleanWord = word.trim();
+        String cleanWord = word.replace(" ","");
         
         for(int i = cleanWord.length() - 1; i >= 0; i--) {
 	reversedWord = reversedWord + cleanWord.charAt(i);
@@ -25,5 +25,14 @@ public class Palindromo {
             return false;
         }
         
+    }
+    /**
+     * Suma dos numeros enteros.
+     * @param a El primer número a sumar.
+     * @param b El segundo número a sumar.
+     * @return La suma de los dos valores ingresados.
+     */
+    public int sumar (int a, int b){
+     return a + b;   
     }
 }
