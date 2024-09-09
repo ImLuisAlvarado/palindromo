@@ -5,7 +5,7 @@
 package mx.itson.palindromo.business;
 
 /**
- *
+ * Class dedicated to the operational part of the Palindromo project.
  * @author darkheaven
  */
 public class Palindromo {
@@ -33,13 +33,5 @@ public class Palindromo {
         }
         
     }
-    /**
-     * Suma dos numeros enteros.
-     * @param a El primer número a sumar.
-     * @param b El segundo número a sumar.
-     * @return La suma de los dos valores ingresados.
-     */
-    public int sumar (int a, int b){
-     return a + b;   
-    }
 }
+// Fierro be like: https://youtu.be/A_6wm8HVaVY?t=20
