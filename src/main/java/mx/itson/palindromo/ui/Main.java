@@ -28,7 +28,7 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtFieldPalindromo = new javax.swing.JTextField();
+        txtFieldPalindrome = new javax.swing.JTextField();
         okButton = new javax.swing.JButton();
         result = new javax.swing.JLabel();
 
@@ -37,9 +37,9 @@ public class Main extends javax.swing.JFrame {
         setBackground(new java.awt.Color(51, 51, 51));
         setForeground(java.awt.Color.darkGray);
 
-        txtFieldPalindromo.addActionListener(new java.awt.event.ActionListener() {
+        txtFieldPalindrome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFieldPalindromoActionPerformed(evt);
+                txtFieldPalindromeActionPerformed(evt);
             }
         });
 
@@ -60,7 +60,7 @@ public class Main extends javax.swing.JFrame {
                         .addGap(14, 14, 14)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(okButton)
-                            .addComponent(txtFieldPalindromo, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtFieldPalindrome, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addComponent(result, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -70,7 +70,7 @@ public class Main extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(txtFieldPalindromo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtFieldPalindrome, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(okButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -81,21 +81,21 @@ public class Main extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtFieldPalindromoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldPalindromoActionPerformed
+    private void txtFieldPalindromeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldPalindromeActionPerformed
         // TODO add your handling code here:
        
-    }//GEN-LAST:event_txtFieldPalindromoActionPerformed
+    }//GEN-LAST:event_txtFieldPalindromeActionPerformed
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         // TODO add your handling code here:
         try{
-            if(Palindromo.esPalindromo(txtFieldPalindromo.getText())==true){
-                result.setText("La palabra "+txtFieldPalindromo.getText()+" sí es un palindromo");
+            if(Palindromo.isPalindrome(txtFieldPalindrome.getText())==true){
+                result.setText(txtFieldPalindrome.getText()+" sí es un palindromo");
             }
             else{
-                result.setText("La palabra "+txtFieldPalindromo.getText()+" no es un palindromo");
+                result.setText(txtFieldPalindrome.getText()+" no es un palindromo");
             }
-            txtFieldPalindromo.setText("");
+            txtFieldPalindrome.setText("");
             
         } catch (Exception ex){
             System.err.println("Ocurrió un error "+ex.getMessage());
@@ -142,6 +142,6 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton okButton;
     private javax.swing.JLabel result;
-    private javax.swing.JTextField txtFieldPalindromo;
+    private javax.swing.JTextField txtFieldPalindrome;
     // End of variables declaration//GEN-END:variables
 }

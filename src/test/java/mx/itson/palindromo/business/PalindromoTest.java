@@ -42,9 +42,9 @@ public class PalindromoTest {
     @Test
     public void testEsPalindromo() {
         System.out.println("esPalindromo");
-        String word = "A luna ese anula";
+        String phrase = "A luna ese anula";
         boolean expResult = true;
-        boolean result = Palindromo.esPalindromo(word);
+        boolean result = Palindromo.isPalindrome(phrase);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
@@ -62,6 +62,20 @@ public class PalindromoTest {
         int result = instance.sumar(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
+    }
+
+    /**
+     * Test of isPalindrome method, of class Palindromo.
+     */
+    @Test
+    public void testIsPalindrome() {
+        System.out.println("isPalindrome");
+        String phrase = "pizza";
+        boolean expResult = false;
+        boolean result = Palindromo.isPalindrome(phrase);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+
     }
     
 }

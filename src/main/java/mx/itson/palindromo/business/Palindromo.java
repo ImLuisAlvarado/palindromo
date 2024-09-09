@@ -9,16 +9,23 @@ package mx.itson.palindromo.business;
  * @author darkheaven
  */
 public class Palindromo {
-    public static boolean esPalindromo (String word){
+    
+    /**
+     * Evaluates if a given phrase is a palindrome.
+     * @param phrase The phrase to be evaluated.
+     * @return Returns true if the phrase is a palindrome, and returns false if
+     * it is not a palindrome.
+     */
+    public static boolean isPalindrome (String phrase){
         
-        String reversedWord = "";
-        String cleanWord = word.replace(" ","");
+        String reversedPhrase = "";
+        String cleanPhrase = phrase.replace(" ","");
         
-        for(int i = cleanWord.length() - 1; i >= 0; i--) {
-	reversedWord = reversedWord + cleanWord.charAt(i);
+        for(int i = cleanPhrase.length() - 1; i >= 0; i--) {
+	reversedPhrase = reversedPhrase + cleanPhrase.charAt(i);
         }
         
-        if (cleanWord.toLowerCase().equals(reversedWord.toLowerCase())){
+        if (cleanPhrase.toLowerCase().equals(reversedPhrase.toLowerCase())){
             return true;
         }
         else{
