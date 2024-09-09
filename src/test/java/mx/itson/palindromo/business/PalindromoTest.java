@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
+ * Class dedicated to automated testing.
  * @author alumnog
  */
 public class PalindromoTest {
